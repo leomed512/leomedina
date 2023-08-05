@@ -577,6 +577,45 @@ section {
   z-index: 1;
 }
 
+.btn-outline-info {
+  filter: brightness(120%);
+  color: #0A90AF !important;
+  border-color: #0A90AF !important;
+  background-color: transparent;
+}
+
+.btn-outline-info:hover {
+  filter: brightness(120%);
+  color: #000 !important;
+  background-color: #0A90AF !important;
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-info:active {
+  color: #000 !important;
+  background-color: #0A90AF !important;
+  border-color: #0A90AF !important;
+}
+
+.btn-info {
+  filter: brightness(120%);
+  color: #fff !important;
+  border-color: #0A90AF !important;
+  background-color: #0A90AF !important;
+}
+
+.btn-info:hover {
+  filter: brightness(130%);
+  background-color: #0A90AF !important;
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-info:active {
+  color: #000 !important;
+  background-color: #0A90AF !important;
+  border-color: #0A90AF !important;
+}
+
 .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.5);
@@ -711,10 +750,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #00A388;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #00A388;
 }
 
 .services .icon i {
@@ -728,7 +767,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: #00A388;
 }
 
 .services .title {
@@ -743,7 +782,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: #00A388;
 }
 
 .services .description {
@@ -845,6 +884,23 @@ section {
 }
 
 /*--------------------------------------------------------------
+
+# Banner
+--------------------------------------------------------------*/
+.banner-cont {
+  background-image: url('/assets/img/satellite.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 25vh;
+  /* Altura del banner */
+  overflow: hidden;
+  position: relative;
+  opacity: 80%;
+}
+
+/*--------------------------------------------------------------
+/*
 # Contact
 --------------------------------------------------------------*/
 .contact {
@@ -1081,7 +1137,7 @@ section {
 #footer {
   padding: 15px;
   color: #f4f6fd;
-  font-size: 14px;
+  font-size: 9px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -1090,15 +1146,9 @@ section {
   background: #040b14;
 }
 
-#footer .copyright {
-  text-align: center;
-}
 
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
+#footer img {
+  max-width: 100px;
 }
 
 @media (max-width: 1199px) {
