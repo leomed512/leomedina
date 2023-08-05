@@ -18,7 +18,13 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("3EjT6Fl1iN7tHVs61");
+    })();
+  </script>
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -49,7 +55,7 @@
               class="bx bxl-instagram"></i></a>
           <a href="https://www.linkedin.com/in/leomedinast/" target="_blank" class="linkedin"><i
               class="bx bxl-linkedin"></i></a>
-          <a href="#" target="_blank" class="gmail"><i class="bx bxl-gmail"></i></a>
+          <a href="#contact" class="gmail"><i class="bx bxl-gmail"></i></a>
         </div>
       </div>
 
@@ -299,7 +305,7 @@
         <div class="section-title">
           <h2>Resume</h2>
           <p>You can have a look at both my forestry engineer resume and my web developer resume. Feel free to download
-            the full version at the end of this section.</p>
+            the full version at the end of this <a href="#downloadResume">section</a>.</p>
         </div>
 
         <div class="row">
@@ -438,7 +444,7 @@
                 <li>Research (writing, data collection and statistical analysis)</li>
               </ul>
             </div>
-            <div class="my-3 ms-4"><a class="btn btn-outline-info"
+            <div id="downloadResume" class="my-3 ms-4"><a class="btn btn-outline-info"
                 href="https://drive.google.com/drive/folders/1bftZYfvChkNUkYJa4AUxO0d2dEQq8Yzt?usp=sharing" download><i
                   class="bi bi-cloud-arrow-down-fill"></i></a>
             </div>
@@ -596,38 +602,44 @@
             <h4 class="title"><a href="#contact">Geospatial analysis</a></h4>
             <p class="description">Present, process, analyze geospatial data for environmental projects, natural
               resource exploitation, research. Natural disaster risk analysis, vulnerability mapping,
-              multi-temporal analysis.</p>
+              multi-temporal analysis. <span>#ArcGis</span> <span>#Qgis</span> <span>#Snap</span></p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bi bi-card-checklist"></i></div>
             <h4 class="title"><a href="#contact">Floristic surveys</a></h4>
             <p class="description">Identify the plant species present in an area, obtain a ecological and socio-economic
               characterization of the site. Get info biological, ecological, ethnobotanical and legal characteristics of
-              the species.</p>
+              the species. <span>#APG</span> <span>#Taxonomy</span></p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
             <div class="icon"><i class="bi bi-calendar4-week"></i></div>
             <h4 class="title"><a href="#contact">Environmental impact assessment</a></h4>
             <p class="description">Learn about the environmental impacts of your business, the technical measures to
               manage them and the related legal regulations. Design a sustainable project for your company.</p>
+            <span>#ISO9001</span> <span>#ISO14001</span>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bi bi-bar-chart"></i></div>
             <h4 class="title"><a href="#contact">Topographic and floristic surveys</a></h4>
             <p class="description">Determine the dimensions of your property. Undersatand its slope, vegetation and soil
-              characteristics and get a map.</p>
+              characteristics and get a map. <span>#Garmin</span> <span>#GPS</span> <span>#CAD</span> <span>#GIS</span>
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="bi bi-binoculars"></i></div>
             <h4 class="title"><a href="#contact">Web development</a></h4>
             <p class="description">Create a website that meets your needs to gain an online presence, showcase your
-              company, product, or personal brand. Extend the capabilities of your current web application.</p>
+              company, product, or personal brand. Extend the capabilities of your current web application.
+              <span>#Frontend</span> <span>#UI/UX</span>
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bi bi-brightness-high"></i></div>
             <h4 class="title"><a href="#contact">Graphic Design</a></h4>
-            <p class="description">Create or update your logo for your business, product or personal brand. Get advice
-              on visuals, usability and reaching more customers.</p>
+            <p class="description">Create or update with Illustrator your logo for your business, product or personal
+              brand. Design flyers. Get advice on visuals, usability and reaching more customers.
+              <span>#Illustrator</span> <span>#Canva</span>
+            </p>
           </div>
 
         </div>
@@ -670,35 +682,37 @@
             </div>
 
           </div>
-
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form class="email-form" id="form">
+              <h6 class="fw-bold text-center mb-3">Contact me to create projects together. <br> Tell me about your
+                ideas,
+                requests and yourself!</h6>
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <label for="emailInput" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="emailInput" required name="email">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <label for="nameInput" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameInput" required name="name">
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <input type="text" class="form-control" name="subject" id="subjectId" required name="subject">
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="message" rows="10" required id="messageInput"></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="text-center"><button type="button" id="sendMessage" onclick="sendMail()"
+                  class="btn btn-primary">Send
+                  Message</button>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
+
           </div>
+
 
         </div>
 
@@ -725,10 +739,9 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/email.js"></script>
 
 </body>
 
