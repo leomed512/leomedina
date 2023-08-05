@@ -801,7 +801,7 @@ section {
 # Banner
 --------------------------------------------------------------*/
 .banner-cont {
-  background-image: url('/assets/img/satellite.jpeg');
+  background-image: url('https://res.cloudinary.com/arawato666/image/upload/v1691256513/satellite_wlyxmv.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
