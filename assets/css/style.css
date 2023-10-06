@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: #0A90AF;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #07a0c2;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #00A388;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: #01b899;
   color: #fff;
 }
 
@@ -215,7 +215,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #00A388;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -322,7 +322,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #00A388;
 }
 
 @media (min-width: 1024px) {
@@ -353,7 +353,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #eceff1;
 }
 
 .work-bg {
@@ -383,7 +383,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #49565a;
   bottom: 0;
   left: 0;
 }
@@ -427,59 +427,9 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px;
-}
-
-.facts .count-box {
-  padding: 30px;
-  width: 100%;
-}
-
-.facts .count-box i {
-  display: block;
-  font-size: 44px;
-  color: #149ddd;
-  float: left;
-  line-height: 0;
-}
-
-.facts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  color: #050d18;
-  margin-left: 60px;
-}
-
-.facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #122f57;
-}
-
-.facts .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #122f57;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.facts .count-box a:hover {
-  color: #1f5297;
-}
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -529,7 +479,7 @@ section {
 .resume .resume-item {
   padding: 0 0 5px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #00A388;
   position: relative;
 }
 
@@ -545,7 +495,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #f5f5f5;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -573,7 +523,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #00A388;
 }
 
 /*--------------------------------------------------------------
@@ -608,7 +558,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #00A388;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -737,11 +687,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #00A388;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #00A388;
 }
 
 .portfolio-details .portfolio-info {
@@ -780,6 +730,8 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
+
 
 /*--------------------------------------------------------------
 # Services
@@ -875,7 +827,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #00A388;
   float: left;
   width: 44px;
   height: 44px;
@@ -926,14 +878,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #00A388;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #00A388;
   color: #fff;
 }
 
@@ -943,6 +895,16 @@ section {
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   border-radius: 10px;
+}
+
+.sendBtn {
+  background-color: #00A388;
+  border-color: #00A388;
+}
+
+.sendBtn:hover {
+  background-color: #01c0a0;
+  border-color: #01c0a0;
 }
 
 .contact .email-form .form-group {
@@ -974,7 +936,7 @@ section {
 }
 
 .contact .email-form button[type=submit] {
-  background: #149ddd;
+  background: #00A388;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -983,7 +945,7 @@ section {
 }
 
 .contact .email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: #03be9f;
 }
 
 @keyframes animate-loading {
