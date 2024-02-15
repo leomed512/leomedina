@@ -41,7 +41,15 @@ h6 {
   border-radius: 50px;
   transition: all 0.4s;
 }
-
+.slogan {
+  padding: 10px ;
+  color:#fff;
+}
+.slogan-end {
+  padding: 100px 10px 50px 10px;
+  color:#4D4D4D;
+  font-weight: bold;
+}
 .back-to-top i {
   font-size: 28px;
   color: #fff;
