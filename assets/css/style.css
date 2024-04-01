@@ -282,7 +282,8 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("https://res.cloudinary.com/arawato666/image/upload/v1696519662/IMG_2894_1_w1ifgb.jpg") center;
+ /* background: url("https://res.cloudinary.com/arawato666/image/upload/v1696519662/IMG_2894_1_w1ifgb.jpg") center;*/
+  background: url("https://res.cloudinary.com/arawato666/image/upload/v1711365078/20211225_123927_yurnoe.jpg") center;
   background-size: cover;
 }
 
