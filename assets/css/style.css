@@ -1033,3 +1033,143 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+/* --------------------------------------------------------------
+# extras
+-------------------------------------------------------------- */
+
+/* ======= Brand & Utilities ======= */
+:root {
+  --brand-green: #337566;
+  --brand-green-dark: #295b4f;
+}
+
+.text-brand { color: var(--brand-green) !important; }
+
+.btn-brand {
+  background-color: var(--brand-green);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  padding: 6px 16px;
+  transition: all 0.3s ease;
+}
+.btn-brand:hover {
+  background-color: var(--brand-green-dark);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 0 10px rgba(51, 117, 102, 0.25);
+}
+
+.row.gx-50 { --bs-gutter-x: 50px; }
+
+/* ======= Skills Section ======= */
+#skills .skill-card {
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* background-color: #ECEFF1; */
+}
+#skills .skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+/* Responsividad — Skills */
+@media (max-width: 992px) {
+  #skills .skill-card { width: 85%; }
+}
+@media (max-width: 576px) {
+  #skills .skill-card { width: 90%; }
+}
+
+/* ======= Resume Section ======= */
+#resume h4 { font-weight: 600; }
+#resume a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+#resume a:hover { text-decoration: underline; }
+#resume ul li h6 { line-height: 1.4; }
+
+/* ======= Experience Highlights ======= */
+#experience .card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#experience .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+#experience h5 { font-weight: 600; }
+#experience p { line-height: 1.6; }
+
+/* ======= Portfolio ======= */
+#portfolio .card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#portfolio .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+#portfolio img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 280px;
+  object-fit: cover;
+}
+/* Responsividad — Portfolio images */
+@media (max-width: 992px) {
+  #portfolio img { height: 240px; }
+}
+@media (max-width: 576px) {
+  #portfolio img { height: 200px; }
+}
+
+/* ======= Services  ======= */
+#services .icon-box {
+  text-align: center;
+  padding: 35px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+#services .icon {
+  margin-bottom: 15px;
+  font-size: 40px;
+  color: var(--brand-green);
+}
+#services .title a {
+  color: var(--brand-green);
+  text-decoration: none;
+  font-weight: 600;
+}
+#services .title a:hover { text-decoration: underline; }
+#services .text-wrapper { max-width: 85%; }
+#services .description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+#services span {
+  color: var(--brand-green);
+  font-size: 0.85rem;
+  margin-right: 5px;
+}
+@media (max-width: 768px) {
+  #services .icon-box { padding: 25px; }
+  #services .text-wrapper { max-width: 95%; }
+}
+
+/* ======= Section Title (consistencia opcional) ======= */
+.section-title h2 {
+  font-weight: 700;
+}
+.section-title p.text-muted {
+  margin-top: 0.25rem;
+}
